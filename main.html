@@ -1,17 +1,60 @@
 <!DOCTYPE html>
+
 <html>
   <head>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cabin"
+      rel="stylesheet"
+    />
     <title>Testing blog</title>
   </head>
   <body>
     <div id="topbar">
-      <a href="main.html"> My blog </a>
+      <a href="main.html" id="title-link"> My blog </a>
     </div>
-    Hello, world!
-
+    <div id="main-content">
+      <h2>Halo Teman-Teman!</h2>
+      <div id="introduction">
+        <div id="pic"><img src="img/profile.jpg" width="120px" /></div>
+        <div id="teks">
+          <p>
+            Namaku Rafael Sean Putra. Teman-temanku memanggilku Rafael atau Sean <br>
+            Aku sekarang merupakan mahasiswa di
+            <abbr title="Institut Teknologi Bandung">ITB</abbr>.
+          </p>
+          <p>Senang berkenalan denganmu!</p>
+        </div>
+      </div>
+      <div id="project">
+        <h2>My project:</h2>
+        <div id="project-item">
+          <h4>MAS-PartO</h4>
+          <p>
+            MAS-PartO (Mesin Absensi SPARTA Otomatis) adalah sebuah program yang
+            dibuat menggunakan bahasa Python dan bertujuan untuk mempermudah
+            proses absensi pada SPARTA (osjur HMIF). Program akan mengecek
+            <i>file chat</i> ZOOM dan akan mengedit sheet Presensi SPARTA.
+            <a
+              id="project-link"
+              href="https://github.com/regnents/MAS-PartO"
+              target="_blank"
+              >Cek proyek di sini</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
     <div id="footer">
-      Have a great day
+      <b>Hubungi Aku:</b><br />
+      <div id="button">
+        <a href="https://www.twitter.com" target="__blank">
+          <button id="twit-button">Twitter</button>
+        </a>
+        <a href="https://www.github.com" target="__blank">
+          <button id="git-button">Github</button>
+        </a>
+      </div>
     </div>
   </body>
 </html>
