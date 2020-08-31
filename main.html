@@ -2,59 +2,115 @@
 
 <html>
   <head>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style/styles.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Cabin"
       rel="stylesheet"
     />
-    <title>Testing blog</title>
+    <title>Blogpage Rafael</title>
   </head>
   <body>
-    <div id="topbar">
-      <a href="main.html" id="title-link"> My blog </a>
-    </div>
-    <div id="main-content">
-      <h2>Halo Teman-Teman!</h2>
-      <div id="introduction">
-        <div id="pic"><img src="img/profile.jpg" width="120px" /></div>
-        <div id="teks">
-          <p>
-            Namaku Rafael Sean Putra. Teman-temanku memanggilku Rafael atau Sean <br>
-            Aku sekarang merupakan mahasiswa di
-            <abbr title="Institut Teknologi Bandung">ITB</abbr>.
-          </p>
-          <p>Senang berkenalan denganmu!</p>
+    <div id="lang-ID">
+      <div id="topbar">
+        <a href="main.html" id="title-link"> Blog Saya </a>
+      </div>
+      <div id="main-content">
+        <h2>Halo Teman-Teman!</h2>
+        <div id="introduction">
+          <div id="pic"><img src="img/profile.jpg" width="120px" /></div>
+          <div id="teks">
+            <p>
+              Namaku Rafael Sean Putra. Teman-temanku memanggilku Rafael atau
+              Sean <br />
+              Aku sekarang merupakan mahasiswa di
+              <abbr title="Institut Teknologi Bandung">ITB</abbr>.
+            </p>
+            <p>Senang berkenalan denganmu!</p>
+          </div>
+        </div>
+        <div id="project">
+          <h2>Proyek Saya:</h2>
+          <div id="project-item">
+            <h4>MAS-PartO</h4>
+            <p>
+              MAS-PartO (Mesin Absensi SPARTA Otomatis) adalah sebuah program
+              yang dibuat menggunakan bahasa Python dan bertujuan untuk
+              mempermudah proses absensi pada SPARTA (osjur HMIF). Program akan
+              mengecek
+              <i>file chat</i> ZOOM dan akan mengedit sheet Presensi SPARTA.
+              <a
+                id="project-link"
+                href="https://github.com/regnents/MAS-PartO"
+                target="_blank"
+                >Cek proyek di sini</a
+              >
+            </p>
+          </div>
         </div>
       </div>
-      <div id="project">
-        <h2>My project:</h2>
-        <div id="project-item">
-          <h4>MAS-PartO</h4>
-          <p>
-            MAS-PartO (Mesin Absensi SPARTA Otomatis) adalah sebuah program yang
-            dibuat menggunakan bahasa Python dan bertujuan untuk mempermudah
-            proses absensi pada SPARTA (osjur HMIF). Program akan mengecek
-            <i>file chat</i> ZOOM dan akan mengedit sheet Presensi SPARTA.
-            <a
-              id="project-link"
-              href="https://github.com/regnents/MAS-PartO"
-              target="_blank"
-              >Cek proyek di sini</a
-            >
-          </p>
+      <div id="contact">
+        <b>Hubungi Aku:</b><br />
+        <div id="button">
+          <a href="https://twitter.com/rafaelseanp" target="__blank">
+            <button id="twit-button">Twitter</button>
+          </a>
+          <a href="https://www.instagram.com/rafaelseanp" target="__blank">
+            <button id="ig-button">Instagram</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="lang-EN">
+      <div id="topbar">
+        <a href="main.html" id="title-link"> My Blog </a>
+      </div>
+      <div id="main-content">
+        <h2>Hello, World!</h2>
+        <div id="introduction">
+          <div id="pic"><img src="img/profile.jpg" width="120px" /></div>
+          <div id="teks">
+            <p>
+              My name is Rafael Sean Putra, most people call me Rafael or Sean.
+              <br />
+              I'm a student in
+              <abbr title="Bandung Institute of Technology">ITB</abbr>.
+            </p>
+            <p>Nice to meet you!</p>
+          </div>
+        </div>
+        <div id="project">
+          <h2>My project:</h2>
+          <div id="project-item">
+            <h4>MAS-PartO</h4>
+            <p>
+              MAS-PartO (Mesin Absensi SPARTA Otomatis) is a program made using
+              Python to help the attendance listing during SPARTA (HMIF's
+              student orientation).
+              <a
+                id="project-link"
+                href="https://github.com/regnents/MAS-PartO"
+                target="_blank"
+                >Check the Project here</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="contact">
+        <b>Contact Me:</b><br />
+        <div id="button">
+          <a href="https://twitter.com/rafaelseanp" target="__blank">
+            <button id="twit-button">Twitter</button>
+          </a>
+          <a href="https://www.instagram.com/rafaelseanp" target="__blank">
+            <button id="ig-button">Instagram</button>
+          </a>
         </div>
       </div>
     </div>
     <div id="footer">
-      <b>Hubungi Aku:</b><br />
-      <div id="button">
-        <a href="https://www.twitter.com" target="__blank">
-          <button id="twit-button">Twitter</button>
-        </a>
-        <a href="https://www.github.com" target="__blank">
-          <button id="git-button">Github</button>
-        </a>
-      </div>
+      <button id="changelang-button" onclick="changeLang()">Ubah bahasa</button>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
